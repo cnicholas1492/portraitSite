@@ -5,7 +5,7 @@ I've satisfied the requirements by adding the following to my project:
 
 > Two "mobile first" media queries: 
 
-1) Changes the layout of the navigation menu in the header from a standard layout to an interactive "hamburger" menu with a couple animations, when the screen size reaches a typical mobile device width (768px).
+1) Changes the layout of the navigation menu in the header from a standard layout to an interactive "hamburger" menu with a couple animations when the screen size reaches a typical mobile device width (768px).
 2)
 
 > Items on the CSS Features List:
