@@ -116,7 +116,7 @@ body {
 }
 
 /* Allows interactive hamburger menu to appear, and disappear when either the menu or menu items are clicked */
-@media(min-width:480px) and (max-width:800px) {
+@media(max-width:480px) {
     .navbar {
         display: flex;
         flex-direction: row;
@@ -180,6 +180,7 @@ body {
         justify-content: center;
         align-content: center;
         padding-top: 1rem;
+        object-fit: scale-down; max-width: 100%
     }
 
     .boxProfileText {
@@ -189,8 +190,6 @@ body {
         align-items: center;
     }
 }
-
-@media(min-width:769px) and (max-width:1024px) {}
 
 h2 {
     display: flex;
