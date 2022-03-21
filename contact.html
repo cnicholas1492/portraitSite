@@ -33,6 +33,20 @@
                 <span class="bar"></span>
             </div>
         </nav>
+        <div class="boxProfile">
+            <aside class="boxProfileImage">
+            </aside>
+    
+            <div class="boxProfileText">
+                <h1> <u>Contact Me</u> </h1>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                    Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
     </header>
     <script src="index.js"></script>
     </div>
@@ -51,6 +65,7 @@
             <div>
                 <input id="email" type="email" />
             </div>
+            <span id='result'></span>
             <div>
                 <label for="subject">Subject</label>
             </div>
@@ -69,32 +84,8 @@
             </div>
             <button type='submit' id='validate'>Send</button>
         </form>
-            <span id='result'></span>
 
-        <script>
-            // compares text entered in field to the standard email address template needed.
-            function validateEmail(email) {
-
-                //    The two forward-slashes "/.../" contains a regexe. Notes about syntax at bottom of script
-                let res = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-                return res.test(email);
-            }
-            // Captures info typed into email form and runs an "if else" statement to display if it is in the correct format or not.
-            function validate() {
-                let result = $("#result");
-                let email = $("#email").val();
-                result.text("");
-                if (validateEmail(email)) {
-                    result.text(email + " is valid");
-                    result.css("color", "green");
-                } else {
-                    result.text(email + " is not a valid email address");
-                    result.css("color", "red");
-                }
-                return false;
-            }
-            $("#validate").on("click", validate);
-        </script>
+        <script src="contact.js"></script>
         
         </form>
     </main>
