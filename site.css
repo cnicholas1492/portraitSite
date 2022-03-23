@@ -229,19 +229,26 @@ img {
 
 /* CONTACT CSS */
 #contactForm {
-    width: 40%;
     height: 450px;
     margin-top: 75px;
     margin-left: 30%;
     position: relative;
 }
 
+#fullName {
+ width: 200px;
+}
+
+#email {
+width: 200px;
+}
+
 #msg {
-    width: 100%;
+    width: 50%;
 }
 
 #subject {
-    width: 35%;
+    width: 150px;
 }
 
 label {
